@@ -21,7 +21,7 @@ img {
  border-radius: 5px;
 }
 .text_container {
-  
+  color: white;
   background-image: url("pics/loons.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,6 +46,11 @@ img {
 <body>
 <center><img src="pics/cal_small.jpg"></img><h1>Cal Sound Board</h1></center>
 <div class="wrapper">
+<div id='a_goal_from_your_man' class='text_container' onclick='play(this.id)'>
+  <img src="pics/mnufc jersey.jpg"></img><br>a goal from your man</div>
+<div id='Minnesota_United' class='text_container' onclick='play(this.id)'>
+  <img src="pics/scarf.jpg"></img><br>Minnesota United</div>
+
   <div id='fantastic_save' class='text_container' onclick='play(this.id)'>
   <img src="pics/goalie glove.jpg"></img><br>fantastic save</div>
 <div id='he_grabs_the_game' class='text_container' onclick='play(this.id)'>
@@ -92,6 +97,8 @@ img {
   <img src="pics/goalie glove.jpg"></img><br>with the goal gaping</div>
 
 </div>
+<audio id='a_goal_from_your_man_audio' src='clips/a goal from your man.mp3'></audio>
+<audio id='Minnesota_United_audio' src='clips/Minnesota United.mp3'></audio>
 <audio id='fantastic_save_audio' src='clips/fantastic save.mp3'></audio>
 <audio id='he_grabs_the_game_audio' src='clips/he grabs the game.mp3'></audio>
 <audio id='twisting_and_turning_audio' src='clips/twisting and turning.mp3'></audio>
