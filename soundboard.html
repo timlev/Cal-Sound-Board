@@ -1,17 +1,41 @@
 <html>
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
 <script>
 function play(id) {
   document.getElementById(id + "_audio").play();
 }
 </script>
 <style>
+body {
+  background-color: #E2E2DE;
+}
+h1 {
+  font-family: 'Rajdhani', sans-serif;
+}
 img {
  max-height: 75px;
  max-width: 75px;
+ border-radius: 5px;
 }
 .text_container {
-  border: solid 1px;
+  
+  background-image: url("pics/loons.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+
+  padding: 10px;
+
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+
+
+  background-position-x: center;
+
+
 }
 .wrapper {
   display: grid;
@@ -20,7 +44,7 @@ img {
 </style>
 </head>
 <body>
-<img src="pics/cal_small.jpg"></img><h1>Cal Sound Board</h1>
+<center><img src="pics/cal_small.jpg"></img><h1>Cal Sound Board</h1></center>
 <div class="wrapper">
   <div id='fantastic_save' class='text_container' onclick='play(this.id)'>
   <img src="pics/goalie glove.jpg"></img><br>fantastic save</div>
