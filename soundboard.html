@@ -5,7 +5,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
 <script>
 function play(id) {
+  document.getElementById(id + "_audio").onended = function() {document.getElementById(id).classList.toggle("playing");};
   document.getElementById(id + "_audio").play();
+  document.getElementById(id).classList.toggle("playing");
 }
 </script>
 <style>
@@ -26,16 +28,22 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 25px;
-
-  padding: 10px;
+  filter: brightness(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   padding-left: 50px;
   font-family: 'Rajdhani', sans-serif;
   text-align: center;
   font-size: larger;
-
   background-position-x: center;
-
-
+}
+.text_container:hover {
+  filter: brightness(140%);
+}
+.playing {
+  filter: brightness(140%);
 }
 .wrapper {
   display: grid;
